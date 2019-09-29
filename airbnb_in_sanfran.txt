@@ -1,0 +1,26 @@
+--What's the most expensive listing? What else can you tell me about the listing?
+
+SELECT 
+* 
+FROM 
+sfo_listings
+ORDER BY price DESC;
+
+The listing in Western Addition by Sarah. It's $10000 per night!!!
+
+
+What neighborhoods seem to be the most popular? 
+
+SELECT
+neighbourhood,
+COUNT (neighbourhood)
+FROM 
+sfo_listings
+GROUP BY neighbourhood
+ORDER BY count DESC;
+
+Mission, Western Addition and South of Market
+
+
+What time of year is the cheapest time to go to San Francisco? What about the busiest?
+
