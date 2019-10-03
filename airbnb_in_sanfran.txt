@@ -24,3 +24,9 @@ Mission, Western Addition and South of Market
 
 What time of year is the cheapest time to go to San Francisco? What about the busiest?
 
+--The cheapest
+SELECT Cast(price AS FLOAT) FROM cheapest;
+SELECT AVG(Cast(price As float)), date_part('month',cheap_date)
+FROM cheapest
+GROUP BY 2;
+
